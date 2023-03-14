@@ -1,0 +1,148 @@
+$accent: #63A60F;
+$green-200: #E0EDCF;
+$green-100: #EFF6E7;
+$dark-900: #121212;
+$dark-800: #31352B;
+$dark-500:#505050;
+$red-900: #CF3E3B;
+$orange-900: #FF7A00;
+$yellow-900: #FFB800;
+$silver-600: #C1C1C1;
+$silver-100: #F6F6F6;
+$white: #FFFFFF;
+
+
+
+$burgerWidth: 30px;
+$burgerHeight: 22px;
+$burgerLineHeight: 2px;
+$burgerColor: $white;
+
+
+
+
+%OpenSans-300 {
+	font-family: 'OpenSans', sans-serif;
+	font-weight: 300;
+}
+
+%OpenSans-400 {
+	font-family: 'OpenSans', sans-serif;
+	font-weight: 400;
+}
+
+%OpenSans-600 {
+	font-family: 'OpenSans', sans-serif;
+	font-weight: 600;
+}
+
+%OpenSans-700 {
+	font-family: 'OpenSans', sans-serif;
+	font-weight: 700;
+}
+
+%Ruda-400 {
+	font-family: 'Ruda', sans-serif;
+	font-weight: 400;
+}
+
+%Ruda-600 {
+	font-family: 'Ruda', sans-serif;
+	font-weight: 600;
+}
+
+%Ruda-700 {
+	font-family: 'Ruda', sans-serif;
+	font-weight: 700;
+}
+
+%Ruda-900 {
+	font-family: 'Ruda', sans-serif;
+	font-weight: 900;
+}
+
+@mixin line-clamp($lines: 1) {
+	@if $lines <=1 {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	@else {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: $lines;
+		-webkit-box-orient: vertical;
+	}
+}
+
+@mixin r($width) {
+	@media (max-width: #{$width}px) {
+		@content;
+	}
+}
+
+@mixin burger {
+	width: $burgerWidth;
+	height: $burgerHeight;
+	position: relative;
+	color: $burgerColor;
+
+	&__line {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+		height: $burgerLineHeight;
+		background-color: currentColor;
+		transition: transform 0.3s ease-in-out;
+	}
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: $burgerLineHeight;
+		background-color: currentColor;
+		transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+	}
+
+	&::before {
+		top: 0;
+	}
+
+	&::after {
+		top: calc(100% - $burgerLineHeight);
+	}
+
+	&--active {
+		.burger__line {
+			transform: scale(0);
+			transition: transform 0.3s ease-in-out;
+		}
+
+		&::before {
+			transform: rotate(45deg);
+			top: 50%;
+			transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+			top: 50%;
+			transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+		}
+	}
+}
+
+%checkbox-hidden {
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	position: absolute;
+}

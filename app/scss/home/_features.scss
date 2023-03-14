@@ -1,0 +1,116 @@
+.features {
+
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+
+        @include r(992) {
+            position: relative;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 470px;
+        width: 100%;
+    }
+
+    &__title {
+        text-align: left;
+        margin-bottom: 30px;
+        @include line-clamp(2);
+
+        @include r(560) {
+            font-size: 24px;
+        }
+    }
+
+    &__span {
+        display: block;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+        @include line-clamp(3);
+
+        @include r(560) {
+            font-size: 16px;
+            @include line-clamp(4);
+        }
+    }
+
+    &__bg {
+        max-width: 440px;
+        width: 100%;
+
+        @include r(992) {
+            position: absolute;
+            top: -20px;
+            bottom: 0;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        @include r(560) {
+            max-width: 345px;
+            height: 462px;
+        }
+    }
+
+    &__list {
+        @include r(560) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__item {
+        color: $title;
+        font-size: 24px;
+        position: relative;
+        margin-bottom: 20px;
+        padding-left: 64px;
+        @include line-clamp(1);
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 34px;
+            height: 34px;
+            left: 0;
+            bottom: 8%;
+        }
+
+        &--time::before {
+            background-image: url('../images/icons/timer-icon.svg');
+        }
+
+        &--delivery::before {
+            background-image: url('../images/icons/delivery-icon.svg');
+        }
+
+        &--restaurant {
+            margin-bottom: 30px;
+
+            &::before {
+                background-image: url('../images/icons/restaurant-icon.svg');
+            }
+        }
+
+        @include r(560) {
+            font-size: 18px;
+            padding: 5px 0 5px 045px;
+            margin-bottom: 10px;
+        }
+
+    }
+
+    &__btn {
+
+        @include r(560) {
+            padding: 12px 32px;
+        }
+    }
+
+}
