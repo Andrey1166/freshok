@@ -1,0 +1,69 @@
+.top {
+    
+        text-align: center;
+    // .top__filters
+
+    &__filters {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 51px;
+    }
+
+    // .top__filter
+
+    &__filter {
+
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+    }
+
+    // .top__btn
+
+    &__btn {
+        text-transform: uppercase;
+        color: $dark-500;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.4;
+        padding: 0;
+        border-bottom: 3px solid transparent;
+
+        // &:focus {
+        //     border-bottom: 3px solid $green-200;
+        // }
+    }
+
+    .mixitup-control-active {
+        border-bottom: 3px solid $green-200;
+    }
+
+    // .top__content
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px 18px;
+    }
+
+    // .top__item
+
+    &__item {
+        margin: 0 15px 30px;
+    }
+
+    // .top__card
+
+    &__card {
+        // margin: 0 15px 30px;
+    }
+
+
+    &__add {
+        background-color: $white;
+        color: $accent;
+        border: 1px solid $accent;
+        
+    }
+}
+

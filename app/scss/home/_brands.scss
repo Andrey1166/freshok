@@ -1,0 +1,24 @@
+.brands {
+    
+    padding: 72px 0;
+    // .brands__list
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    // .brands__item
+
+    &__link {
+        opacity: 0.5;
+        transition: opacity 0.2s ease-out;
+    }
+
+    // .brands__img
+
+    &__link:hover {
+        opacity: 1;
+    }
+}

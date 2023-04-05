@@ -1,71 +1,59 @@
-<section class="filters">
+<section class="catalog-filters">
     <div class="container">
-        <div class="filters_top">
-            <h3 class="title">
-                Каталог продуктов
-            </h3>
-            <div class="filters__right">
-                <form action="#">
-                    <select class="filters__name filters__select">
-                        <option value="">По названию</option>
-                        <option value="">По цене</option>
-                        <option value="">3</option>
-                    </select>
-                    <select class="filters__number filters__select">
-                        <option value="">12</option>
-                        <option value="">16</option>
-                        <option value="">20</option>
-                    </select>
-                </form>
-            </div>
-        </div>
-        <div class="filters__bottom">
-            <ul class="filters__side">
-                <li class="filters__item category">
-                    <h3 class="filters__description category__description">
+        <h3 class="catalog-filters__title">
+            Каталог товаров
+        </h3>
+
+        <div class="catalog-filters__bottom">
+            <ul class="catalog-filters__side">
+                <li class="catalog-filters__item category">
+                    <h3 class="catalog-filters__description category__description">
                         Категории
+                        <svg class="catalog-filters__arrow">
+                            <use xlink:href="images/sprite.svg#up_arrow"></use>
+                        </svg>
                     </h3>
-                    <form class="category__form" action="#">
+                    <form class="category__form filters-list" action="#">
                         <label class="category__label">
                             <input class="category__input" type="checkbox" checked>
                             <span class="category__text">
-                                Бургеры
+                                Овощи и фрукты
                             </span>
                         </label>
                         <label class="category__label">
                             <input class="category__input" type="checkbox">
                             <span class="category__text">
-                                Пицца
+                                Бакалея
                             </span>
                         </label>
                         <label class="category__label">
                             <input class="category__input" type="checkbox">
                             <span class="category__text">
-                                Сендвичи
+                                Молочные продукты
                             </span>
                         </label>
                         <label class="category__label">
                             <input class="category__input" type="checkbox">
                             <span class="category__text">
-                                Азиатская кухня
+                                Хлеб
                             </span>
                         </label>
                         <label class="category__label">
                             <input class="category__input" type="checkbox">
                             <span class="category__text">
-                                Сеты
+                                Мясо
                             </span>
                         </label>
                         <label class="category__label">
                             <input class="category__input" type="checkbox">
                             <span class="category__text">
-                                Европейская кухня
+                                Колбаса
                             </span>
                         </label>
                         <label class="category__label">
                             <input class="category__input" type="checkbox">
                             <span class="category__text">
-                                Напитки
+                                Рыба
                             </span>
                         </label>
                         <label class="category__label">
@@ -76,11 +64,14 @@
                         </label>
                     </form>
                 </li>
-                <li class="filters__item offer">
-                    <h3 class="filters__description offer__description">
+                <li class="catalog-filters__item offer">
+                    <h3 class="catalog-filters__description offer__description">
                         Предложения
+                        <svg class="catalog-filters__arrow">
+                            <use xlink:href="images/sprite.svg#up_arrow"></use>
+                        </svg>
                     </h3>
-                    <form class="offer__form" action="#">
+                    <form class="offer__form filters-list" action="#">
                         <label class="offer__label">
                             <div class="offer__box">
                                 <input class="offer__input" type="checkbox">
@@ -116,389 +107,820 @@
                         </label>
                     </form>
                 </li>
-                <li class="filters__item filters__item--price">
-                    <h3 class="filters__description">
-                        Цена
+                <li class="catalog-filters__item brand">
+                    <h3 class="catalog-filters__description brand__description">
+                        Бренд
+                        <svg class="catalog-filters__arrow">
+                            <use xlink:href="images/sprite.svg#up_arrow"></use>
+                        </svg>
                     </h3>
+                    <form class="brand__form filters-list" action="#">
+                        <label class="brand__label">
+                            <div class="brand__box">
+                                <input class="brand__input" type="checkbox">
+                                <span class="brand__checkbox">
 
-                    <div class="filters__prices">
-                        <span class="filters__min">
-                            от
-                            <input class="filters__from" value="0">
-                            ₽
-                        </span>
-                        <span class="filters__max">
-                            до
-                            <input class="filters__to" value="0">
-                            ₽
-                        </span>
-                    </div>
+                                </span>
+                            </div>
+                            <span class="brand__text">
+                                CocaCola
+                            </span>
+                        </label>
+                        <label class="brand__label">
+                            <div class="brand__box">
+                                <input class="brand__input" type="checkbox" checked>
+                                <span class="brand__checkbox">
 
-                    <form class="filters__form" action="#">
-                        <input class="filters__input" type="text" data-min="100" data-max="1200" data-from="100"
-                            data-to="1000">
+                                </span>
+                            </div>
+                            <span class="brand__text">
+                                Pepsi
+                            </span>
+                        </label>
+                        <label class="brand__label">
+                            <div class="brand__box">
+                                <input class="brand__input" type="checkbox">
+                                <span class="brand__checkbox">
+
+                                </span>
+                            </div>
+                            <span class="brand__text">
+                                Sprite
+                            </span>
+                        </label>
+                        <label class="brand__label">
+                            <div class="brand__box">
+                                <input class="brand__input" type="checkbox">
+                                <span class="brand__checkbox">
+
+                                </span>
+                            </div>
+                            <span class="brand__text">
+                                Fanta
+                            </span>
+                        </label>
+                        <label class="brand__label">
+                            <div class="brand__box">
+                                <input class="brand__input" type="checkbox">
+                                <span class="brand__checkbox">
+
+                                </span>
+                            </div>
+                            <span class="brand__text">
+                                RedBull
+                            </span>
+                        </label>
+                        <label class="brand__label">
+                            <div class="brand__box">
+                                <input class="brand__input" type="checkbox">
+                                <span class="brand__checkbox">
+
+                                </span>
+                            </div>
+                            <span class="brand__text">
+                                Dr Pepper
+                            </span>
+                        </label>
                     </form>
                 </li>
+                <li class="catalog-filters__item catalog-filters__item--price">
+                    <h3 class="catalog-filters__description">
+                        Цена
+                        <svg class="catalog-filters__arrow">
+                            <use xlink:href="images/sprite.svg#up_arrow"></use>
+                        </svg>
+                    </h3>
+                    <div class="filters-list">
+                        <div class="catalog-filters__prices">
+                            <span class="catalog-filters__min">
+                                от
+                                <input class="catalog-filters__from" value="0">
+                                ₽
+                            </span>
+                            <span class="catalog-filters__max">
+                                до
+                                <input class="catalog-filters__to" value="0">
+                                ₽
+                            </span>
+                        </div>
+
+                        <form class="catalog-filters__form" action="#">
+                            <input class="catalog-filters__input" type="text" data-min="100" data-max="1200"
+                                data-from="100" data-to="1000">
+                        </form>
+                    </div>
+
+                </li>
             </ul>
-            <div class="filters__products products">
-                <ul class="products__list">
-                    <li class="products__item">
-                        <article class="products__card card">
-        
-                            <a class="card__link" href="#">
-        
-                                <span class="sr-only">
-                                    ссылка на страницу товара
+
+            <div class="catalog-products">
+                <div class="catalog-products__top">
+                    <form action="#">
+                        <select class="catalog-products__name catalog-products__select">
+                            <option value="">По названию</option>
+                            <option value="">По цене</option>
+                            <option value="">3</option>
+                        </select>
+                        <select class="catalog-products__number catalog-products__select">
+                            <option value="">по 12</option>
+                            <option value="">по 16</option>
+                            <option value="">по 20</option>
+                        </select>
+                    </form>
+                    <button class="catalog-products__btn list__btn">
+                        <svg class="catalog-products__icon list__icon">
+                            <use xlink:href="images/sprite.svg#list_btn_icon"></use>
+                        </svg>
+                    </button>
+                    <button class="catalog-products__btn grid__btn catalog-products__btn--active">
+                        <svg class="catalog-products__icon grid__icon">
+                            <use xlink:href="images/sprite.svg#grid_btn_icon"></use>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="catalog-products__list">
+
+                    <li class="catalog-products__item">
+                        <article class="card">
+
+
+                            <div class="card__badges badge">
+                                <span class="badge__hit badge__all">
+                                    Хит
                                 </span>
-        
+                            </div>
+                            <a class="card__favorite" href="#">
+                                <svg class="card__heart">
+                                    <use xlink:href="images/sprite.svg#favorite_icon"></use>
+                                </svg>
                             </a>
-        
-                            <img class="card__img" src="images/cards/1.jpg" width="140" height="140" alt="гамбургер">
-        
-                            <h3 class="card__description">
-                                Чизбургер с листьями салата
-                            </h3>
-        
-                            <span class="card__price">
-                                160 руб.
-                            </span>
-        
-                            <button class="card__btn" type="button">
-                                В корзину
-                            </button>
+
+                            <a class="card__link" href="#">
+                                <img class="card__img" src="images/cards/3.jpg" width="300" height="215" alt="img">
+                            </a>
+                            <div class="card__body">
+                                <div class="card__info">
+                                    <span class="card__availability card__available">
+                                        В наличии
+                                    </span>
+                                    <span class="card__rating">
+                                        4.5
+                                        <svg class="card__star">
+                                            <use xlink:href="images/sprite.svg#star_icon"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <a class="card__description" href="#">
+                                    Питахайя красная с белой мякотью, 1шт
+                                </a>
+                                <div class="card__bottom">
+                                    <div class="card_prices price">
+                                        <span class="price__old">
+
+                                        </span>
+                                        <span class="price_new">
+                                            1019 ₽
+                                        </span>
+                                    </div>
+                                    <button class="card__btn" type="button">
+                                        <svg class="card__cart">
+                                            <use xlink:href="images/sprite.svg#cart_icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </article>
                     </li>
-        
-                    <li class="products__item">
-                        <article class="products__card card">
-        
-                            <a class="card__link" href="#">
-        
-                                <span class="sr-only">
-                                    ссылка на страницу товара
+
+                    <li class="catalog-products__item">
+                        <article class="card">
+
+
+                            <div class="card__badges badge">
+                                <span class="badge__new badge__all">
+                                    Новинка
                                 </span>
-        
+                                <span class="badge__discount badge__all">
+                                    -50%
+                                </span>
+                            </div>
+                            <a class="card__favorite" href="#">
+                                <svg class="card__heart">
+                                    <use xlink:href="images/sprite.svg#favorite_icon"></use>
+                                </svg>
                             </a>
-        
-                            <img class="card__img" src="images/cards/2.jpg" width="140" height="140" alt="гамбургер">
-        
-                            <h3 class="card__description">
-                                Бифбургер
-                            </h3>
-        
-                            <span class="card__price">
-                                190 руб.
-                            </span>
-        
-                            <button class="card__btn" type="button">
-                                В корзину
-                            </button>
+
+                            <a class="card__link" href="#">
+                                <img class="card__img" src="images/cards/4.jpg" width="300" height="215" alt="img">
+                            </a>
+                            <div class="card__body">
+                                <div class="card__info">
+                                    <span class="card__availability card__available">
+                                        В наличии
+                                    </span>
+                                    <span class="card__rating">
+                                        4.5
+                                        <svg class="card__star">
+                                            <use xlink:href="images/sprite.svg#star_icon"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <a class="card__description" href="#">
+                                    Кетчуп томатный детский органический Bio-Zentrale 500мл, 1 шт
+                                </a>
+                                <div class="card__bottom">
+                                    <div class="card_prices price">
+                                        <span class="price__old">
+
+                                        </span>
+                                        <span class="price_new">
+                                            600 ₽
+                                        </span>
+                                    </div>
+                                    <button class="card__btn" type="button">
+                                        <svg class="card__cart">
+                                            <use xlink:href="images/sprite.svg#cart_icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </article>
                     </li>
-        
-                    <li class="products__item">
-                        <article class="products__card card">
-        
-                            <a class="card__link" href="#">
-        
-                                <span class="sr-only">
-                                    ссылка на страницу товара
+
+                    <li class="catalog-products__item">
+                        <article class="card">
+
+
+                            <div class="card__badges badge">
+                                <span class="badge__hit badge__all">
+                                    Хит
                                 </span>
-        
+                            </div>
+                            <a class="card__favorite" href="#">
+                                <svg class="card__heart">
+                                    <use xlink:href="images/sprite.svg#favorite_icon"></use>
+                                </svg>
                             </a>
-        
-                            <img class="card__img" src="images/cards/3.jpg" width="140" height="140" alt="гамбургер">
-        
-                            <h3 class="card__description">
-                                Королевский чизбургер
-                            </h3>
-        
-                            <span class="card__price">
-                                260 руб.
-                            </span>
-        
-                            <button class="card__btn" type="button">
-                                В корзину
-                            </button>
+
+                            <a class="card__link" href="#">
+                                <img class="card__img" src="images/cards/3.jpg" width="300" height="215" alt="img">
+                            </a>
+                            <div class="card__body">
+                                <div class="card__info">
+                                    <span class="card__availability card__available">
+                                        В наличии
+                                    </span>
+                                    <span class="card__rating">
+                                        4.5
+                                        <svg class="card__star">
+                                            <use xlink:href="images/sprite.svg#star_icon"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <a class="card__description" href="#">
+                                    Питахайя красная с белой мякотью, 1шт
+                                </a>
+                                <div class="card__bottom">
+                                    <div class="card_prices price">
+                                        <span class="price__old">
+
+                                        </span>
+                                        <span class="price_new">
+                                            1019 ₽
+                                        </span>
+                                    </div>
+                                    <button class="card__btn" type="button">
+                                        <svg class="card__cart">
+                                            <use xlink:href="images/sprite.svg#cart_icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </article>
                     </li>
-        
-                    <li class="products__item">
-                        <article class="products__card card">
-        
-                            <a class="card__link" href="#">
-        
-                                <span class="sr-only">
-                                    ссылка на страницу товара
+
+                    <li class="catalog-products__item">
+                        <article class="card">
+
+
+                            <div class="card__badges badge">
+                                <span class="badge__new badge__all">
+                                    Новинка
                                 </span>
-        
+                                <span class="badge__discount badge__all">
+                                    -50%
+                                </span>
+                            </div>
+                            <a class="card__favorite" href="#">
+                                <svg class="card__heart">
+                                    <use xlink:href="images/sprite.svg#favorite_icon"></use>
+                                </svg>
                             </a>
-        
-                            <img class="card__img" src="images/cards/4.jpg" width="140" height="140" alt="гамбургер">
-        
-                            <h3 class="card__description">
-                                Черный гамбургер
-                            </h3>
-        
-                            <span class="card__price">
-                                199 руб.
-                            </span>
-        
-                            <button class="card__btn" type="button">
-                                В корзину
-                            </button>
+
+                            <a class="card__link" href="#">
+                                <img class="card__img" src="images/cards/4.jpg" width="300" height="215" alt="img">
+                            </a>
+                            <div class="card__body">
+                                <div class="card__info">
+                                    <span class="card__availability card__available">
+                                        В наличии
+                                    </span>
+                                    <span class="card__rating">
+                                        4.5
+                                        <svg class="card__star">
+                                            <use xlink:href="images/sprite.svg#star_icon"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <a class="card__description" href="#">
+                                    Кетчуп томатный детский органический Bio-Zentrale 500мл, 1 шт
+                                </a>
+                                <div class="card__bottom">
+                                    <div class="card_prices price">
+                                        <span class="price__old">
+
+                                        </span>
+                                        <span class="price_new">
+                                            600 ₽
+                                        </span>
+                                    </div>
+                                    <button class="card__btn" type="button">
+                                        <svg class="card__cart">
+                                            <use xlink:href="images/sprite.svg#cart_icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </article>
                     </li>
-    
-                    <li class="products__item">
-                        <article class="products__card card">
-        
-                            <a class="card__link" href="#">
-        
-                                <span class="sr-only">
-                                    ссылка на страницу товара
+
+                    <li class="catalog-products__item">
+                        <article class="card">
+
+
+                            <div class="card__badges badge">
+                                <span class="badge__hit badge__all">
+                                    Хит
                                 </span>
-        
+                            </div>
+                            <a class="card__favorite" href="#">
+                                <svg class="card__heart">
+                                    <use xlink:href="images/sprite.svg#favorite_icon"></use>
+                                </svg>
                             </a>
-        
-                            <img class="card__img" src="images/cards/1.jpg" width="140" height="140" alt="гамбургер">
-        
-                            <h3 class="card__description">
-                                Чизбургер с листьями салата
-                            </h3>
-        
-                            <span class="card__price">
-                                160 руб.
-                            </span>
-        
-                            <button class="card__btn" type="button">
-                                В корзину
-                            </button>
+
+                            <a class="card__link" href="#">
+                                <img class="card__img" src="images/cards/5.jpg" width="300" height="215" alt="img">
+                            </a>
+                            <div class="card__body">
+                                <div class="card__info">
+                                    <span class="card__availability card__available">
+                                        В наличии
+                                    </span>
+                                    <span class="card__rating">
+                                        4.5
+                                        <svg class="card__star">
+                                            <use xlink:href="images/sprite.svg#star_icon"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <a class="card__description" href="#">
+                                    Морковь молодая с бабушкиной грядки, 1кг
+                                </a>
+                                <div class="card__bottom">
+                                    <div class="card_prices price">
+                                        <span class="price__old">
+
+                                        </span>
+                                        <span class="price_new">
+                                            49 ₽
+                                        </span>
+                                    </div>
+                                    <button class="card__btn" type="button">
+                                        <svg class="card__cart">
+                                            <use xlink:href="images/sprite.svg#cart_icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </article>
                     </li>
-        
-                    <li class="products__item">
-                        <article class="products__card card">
-        
-                            <a class="card__link" href="#">
-        
-                                <span class="sr-only">
-                                    ссылка на страницу товара
+
+                    <li class="catalog-products__item">
+                        <article class="card">
+
+
+                            <div class="card__badges badge">
+                                <span class="badge__discount badge__all">
+                                    -30%
                                 </span>
-        
+                            </div>
+                            <a class="card__favorite" href="#">
+                                <svg class="card__heart">
+                                    <use xlink:href="images/sprite.svg#favorite_icon"></use>
+                                </svg>
                             </a>
-        
-                            <img class="card__img" src="images/cards/2.jpg" width="140" height="140" alt="гамбургер">
-        
-                            <h3 class="card__description">
-                                Бифбургер
-                            </h3>
-        
-                            <span class="card__price">
-                                190 руб.
-                            </span>
-        
-                            <button class="card__btn" type="button">
-                                В корзину
-                            </button>
+
+                            <a class="card__link" href="#">
+                                <img class="card__img" src="images/cards/6.jpg" width="300" height="215" alt="img">
+                            </a>
+                            <div class="card__body">
+                                <div class="card__info">
+                                    <span class="card__availability card__available">
+                                        В наличии
+                                    </span>
+                                    <span class="card__rating">
+                                        4.5
+                                        <svg class="card__star">
+                                            <use xlink:href="images/sprite.svg#star_icon"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <a class="card__description" href="#">
+                                    Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин
+                                    безалкогольн...
+                                </a>
+                                <div class="card__bottom">
+                                    <div class="card_prices price">
+                                        <span class="price__old">
+                                            299 ₽
+                                        </span>
+                                        <span class="price_new">
+                                            199 ₽
+                                        </span>
+                                    </div>
+                                    <button class="card__btn" type="button">
+                                        <svg class="card__cart">
+                                            <use xlink:href="images/sprite.svg#cart_icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </article>
                     </li>
-        
-                    <li class="products__item">
-                        <article class="products__card card">
-        
-                            <a class="card__link" href="#">
-        
-                                <span class="sr-only">
-                                    ссылка на страницу товара
+
+                    <li class="catalog-products__item">
+                        <article class="card">
+
+
+                            <div class="card__badges badge">
+                                <span class="badge__new badge__all">
+                                    Новинка
                                 </span>
-        
+                            </div>
+                            <a class="card__favorite" href="#">
+                                <svg class="card__heart">
+                                    <use xlink:href="images/sprite.svg#favorite_icon"></use>
+                                </svg>
                             </a>
-        
-                            <img class="card__img" src="images/cards/3.jpg" width="140" height="140" alt="гамбургер">
-        
-                            <h3 class="card__description">
-                                Королевский чизбургер
-                            </h3>
-        
-                            <span class="card__price">
-                                260 руб.
-                            </span>
-        
-                            <button class="card__btn" type="button">
-                                В корзину
-                            </button>
+
+                            <a class="card__link" href="#">
+                                <img class="card__img" src="images/cards/7.jpg" width="300" height="215" alt="img">
+                            </a>
+                            <div class="card__body">
+                                <div class="card__info">
+                                    <span class="card__availability card__available">
+                                        В наличии
+                                    </span>
+                                    <span class="card__rating">
+                                        4.5
+                                        <svg class="card__star">
+                                            <use xlink:href="images/sprite.svg#star_icon"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <a class="card__description" href="#">
+                                    Кофе с коноплей органический Caffé Salomoni 250г
+                                </a>
+                                <div class="card__bottom">
+                                    <div class="card_prices price">
+                                        <span class="price__old">
+
+                                        </span>
+                                        <span class="price_new">
+                                            877 ₽
+                                        </span>
+                                    </div>
+                                    <button class="card__btn" type="button">
+                                        <svg class="card__cart">
+                                            <use xlink:href="images/sprite.svg#cart_icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </article>
                     </li>
-        
-                    <li class="products__item">
-                        <article class="products__card card">
-        
-                            <a class="card__link" href="#">
-        
-                                <span class="sr-only">
-                                    ссылка на страницу товара
+
+                    <li class="catalog-products__item">
+                        <article class="card">
+
+
+                            <div class="card__badges badge">
+                                <span class="badge__hit badge__all">
+                                    Хит
                                 </span>
-        
+                            </div>
+                            <a class="card__favorite" href="#">
+                                <svg class="card__heart">
+                                    <use xlink:href="images/sprite.svg#favorite_icon"></use>
+                                </svg>
                             </a>
-        
-                            <img class="card__img" src="images/cards/4.jpg" width="140" height="140" alt="гамбургер">
-        
-                            <h3 class="card__description">
-                                Черный гамбургер
-                            </h3>
-        
-                            <span class="card__price">
-                                199 руб.
-                            </span>
-        
-                            <button class="card__btn" type="button">
-                                В корзину
-                            </button>
+
+                            <a class="card__link" href="#">
+                                <img class="card__img" src="images/cards/3.jpg" width="300" height="215" alt="img">
+                            </a>
+                            <div class="card__body">
+                                <div class="card__info">
+                                    <span class="card__availability card__available">
+                                        В наличии
+                                    </span>
+                                    <span class="card__rating">
+                                        4.5
+                                        <svg class="card__star">
+                                            <use xlink:href="images/sprite.svg#star_icon"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <a class="card__description" href="#">
+                                    Питахайя красная с белой мякотью, 1шт
+                                </a>
+                                <div class="card__bottom">
+                                    <div class="card_prices price">
+                                        <span class="price__old">
+
+                                        </span>
+                                        <span class="price_new">
+                                            1019 ₽
+                                        </span>
+                                    </div>
+                                    <button class="card__btn" type="button">
+                                        <svg class="card__cart">
+                                            <use xlink:href="images/sprite.svg#cart_icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </article>
                     </li>
-    
-                    <li class="products__item">
-                        <article class="products__card card">
-        
-                            <a class="card__link" href="#">
-        
-                                <span class="sr-only">
-                                    ссылка на страницу товара
+
+                    <li class="catalog-products__item">
+                        <article class="card">
+
+                            <div class="card__badges badge">
+                                <span class="badge__hit badge__all">
+                                    Хит
                                 </span>
-        
+                            </div>
+                            <a class="card__favorite" href="#">
+                                <svg class="card__heart">
+                                    <use xlink:href="images/sprite.svg#favorite_icon"></use>
+                                </svg>
                             </a>
-        
-                            <img class="card__img" src="images/cards/1.jpg" width="140" height="140" alt="гамбургер">
-        
-                            <h3 class="card__description">
-                                Чизбургер с листьями салата
-                            </h3>
-        
-                            <span class="card__price">
-                                160 руб.
-                            </span>
-        
-                            <button class="card__btn" type="button">
-                                В корзину
-                            </button>
+
+                            <a class="card__link" href="#">
+                                <img class="card__img" src="images/cards/3.jpg" width="300" height="215" alt="img">
+                            </a>
+                            <div class="card__body">
+                                <div class="card__info">
+                                    <span class="card__availability card__available">
+                                        В наличии
+                                    </span>
+                                    <span class="card__rating">
+                                        4.5
+                                        <svg class="card__star">
+                                            <use xlink:href="images/sprite.svg#star_icon"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <a class="card__description" href="#">
+                                    Питахайя красная с белой мякотью, 1шт
+                                </a>
+                                <div class="card__bottom">
+                                    <div class="card_prices price">
+                                        <span class="price__old">
+
+                                        </span>
+                                        <span class="price_new">
+                                            1019 ₽
+                                        </span>
+                                    </div>
+                                    <button class="card__btn" type="button">
+                                        <svg class="card__cart">
+                                            <use xlink:href="images/sprite.svg#cart_icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </article>
                     </li>
-        
-                    <li class="products__item">
-                        <article class="products__card card">
-        
-                            <a class="card__link" href="#">
-        
-                                <span class="sr-only">
-                                    ссылка на страницу товара
+
+                    <li class="catalog-products__item">
+                        <article class="card">
+
+
+                            <div class="card__badges badge">
+                                <span class="badge__new badge__all">
+                                    Новинка
                                 </span>
-        
+                                <span class="badge__discount badge__all">
+                                    -50%
+                                </span>
+                            </div>
+                            <a class="card__favorite" href="#">
+                                <svg class="card__heart">
+                                    <use xlink:href="images/sprite.svg#favorite_icon"></use>
+                                </svg>
                             </a>
-        
-                            <img class="card__img" src="images/cards/2.jpg" width="140" height="140" alt="гамбургер">
-        
-                            <h3 class="card__description">
-                                Бифбургер
-                            </h3>
-        
-                            <span class="card__price">
-                                190 руб.
-                            </span>
-        
-                            <button class="card__btn" type="button">
-                                В корзину
-                            </button>
+
+                            <a class="card__link" href="#">
+                                <img class="card__img" src="images/cards/4.jpg" width="300" height="215" alt="img">
+                            </a>
+                            <div class="card__body">
+                                <div class="card__info">
+                                    <span class="card__availability card__available">
+                                        В наличии
+                                    </span>
+                                    <span class="card__rating">
+                                        4.5
+                                        <svg class="card__star">
+                                            <use xlink:href="images/sprite.svg#star_icon"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <a class="card__description" href="#">
+                                    Кетчуп томатный детский органический Bio-Zentrale 500мл, 1 шт
+                                </a>
+                                <div class="card__bottom">
+                                    <div class="card_prices price">
+                                        <span class="price__old">
+
+                                        </span>
+                                        <span class="price_new">
+                                            600 ₽
+                                        </span>
+                                    </div>
+                                    <button class="card__btn" type="button">
+                                        <svg class="card__cart">
+                                            <use xlink:href="images/sprite.svg#cart_icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </article>
                     </li>
-        
-                    <li class="products__item">
-                        <article class="products__card card">
-        
-                            <a class="card__link" href="#">
-        
-                                <span class="sr-only">
-                                    ссылка на страницу товара
+
+                    <li class="catalog-products__item">
+                        <article class="card">
+
+
+                            <div class="card__badges badge">
+                                <span class="badge__hit badge__all">
+                                    Хит
                                 </span>
-        
+                            </div>
+                            <a class="card__favorite" href="#">
+                                <svg class="card__heart">
+                                    <use xlink:href="images/sprite.svg#favorite_icon"></use>
+                                </svg>
                             </a>
-        
-                            <img class="card__img" src="images/cards/3.jpg" width="140" height="140" alt="гамбургер">
-        
-                            <h3 class="card__description">
-                                Королевский чизбургер
-                            </h3>
-        
-                            <span class="card__price">
-                                260 руб.
-                            </span>
-        
-                            <button class="card__btn" type="button">
-                                В корзину
-                            </button>
+
+                            <a class="card__link" href="#">
+                                <img class="card__img" src="images/cards/3.jpg" width="300" height="215" alt="img">
+                            </a>
+                            <div class="card__body">
+                                <div class="card__info">
+                                    <span class="card__availability card__available">
+                                        В наличии
+                                    </span>
+                                    <span class="card__rating">
+                                        4.5
+                                        <svg class="card__star">
+                                            <use xlink:href="images/sprite.svg#star_icon"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <a class="card__description" href="#">
+                                    Питахайя красная с белой мякотью, 1шт
+                                </a>
+                                <div class="card__bottom">
+                                    <div class="card_prices price">
+                                        <span class="price__old">
+
+                                        </span>
+                                        <span class="price_new">
+                                            1019 ₽
+                                        </span>
+                                    </div>
+                                    <button class="card__btn" type="button">
+                                        <svg class="card__cart">
+                                            <use xlink:href="images/sprite.svg#cart_icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </article>
                     </li>
-        
-                    <li class="products__item">
-                        <article class="products__card card">
-        
-                            <a class="card__link" href="#">
-        
-                                <span class="sr-only">
-                                    ссылка на страницу товара
+
+                    <li class="catalog-products__item">
+                        <article class="card">
+
+
+                            <div class="card__badges badge">
+                                <span class="badge__new badge__all">
+                                    Новинка
                                 </span>
-        
+                                <span class="badge__discount badge__all">
+                                    -50%
+                                </span>
+                            </div>
+                            <a class="card__favorite" href="#">
+                                <svg class="card__heart">
+                                    <use xlink:href="images/sprite.svg#favorite_icon"></use>
+                                </svg>
                             </a>
-        
-                            <img class="card__img" src="images/cards/4.jpg" width="140" height="140" alt="гамбургер">
-        
-                            <h3 class="card__description">
-                                Черный гамбургер
-                            </h3>
-        
-                            <span class="card__price">
-                                199 руб.
-                            </span>
-        
-                            <button class="card__btn" type="button">
-                                В корзину
-                            </button>
+
+                            <a class="card__link" href="#">
+                                <img class="card__img" src="images/cards/4.jpg" width="300" height="215" alt="img">
+                            </a>
+                            <div class="card__body">
+                                <div class="card__info">
+                                    <span class="card__availability card__available">
+                                        В наличии
+                                    </span>
+                                    <span class="card__rating">
+                                        4.5
+                                        <svg class="card__star">
+                                            <use xlink:href="images/sprite.svg#star_icon"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <a class="card__description" href="#">
+                                    Кетчуп томатный детский органический Bio-Zentrale 500мл, 1 шт
+                                </a>
+                                <div class="card__bottom">
+                                    <div class="card_prices price">
+                                        <span class="price__old">
+
+                                        </span>
+                                        <span class="price_new">
+                                            600 ₽
+                                        </span>
+                                    </div>
+                                    <button class="card__btn" type="button">
+                                        <svg class="card__cart">
+                                            <use xlink:href="images/sprite.svg#cart_icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </article>
                     </li>
                 </ul>
-                <div class="filters__pagination pagination">
-                    <a class="pagination__prev pagination__arrows" href="#"></a>
-                    <ul class="pagination__list">
-                        <li class="pagination__item pagination__item--active">
-                            <span href="" class="pagination__link">
-                                1
-                            </span>
-                        </li>
-                        <li class="pagination__item">
-                            <a href="" class="pagination__link">
-                                2
-                            </a>
-                        </li>
-                        <li class="pagination__item">
-                            <span href="" class="pagination__link">
-                                ...
-                            </span>
-                        </li>
-                        <li class="pagination__item">
-                            <a href="" class="pagination__link">
-                                9
-                            </a>
-                        </li>
-                        <li class="pagination__item">
-                            <a href="" class="pagination__link">
-                                10
-                            </a>
-                        </li>
-                    </ul>
-                    <a class="pagination__next pagination__arrows" href="#"></a>
+                <div class="catalog-filters__footer">
+                    <button class="catalog-filters__add default__btn">
+                        Показать еще
+                    </button>
+                    <div class="catalog-filters__pagination pagination">
+                        <a class="pagination__prev pagination__arrows" href="#">
+                            <svg class="pagination__prev--icon  pagination__icons">
+                                <use xlink:href="images/sprite.svg#prev_arrow"></use>
+                            </svg>
+                        </a>
+                        <ul class="pagination__list">
+                            <li class="pagination__item pagination__item--active">
+                                <span href="#" class="pagination__link">
+                                    1
+                                </span>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__link">
+                                    2
+                                </a>
+                            </li>
+                            <li class="pagination__item">
+                                <span href="#" class="pagination__link">
+                                    ...
+                                </span>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__link">
+                                    9
+                                </a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__link">
+                                    10
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="pagination__next pagination__arrows pagination__arrows--active" href="#">
+                            <svg class="pagination__next--icon pagination__icons">
+                                <use xlink:href="images/sprite.svg#next_arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-

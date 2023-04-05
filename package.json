@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
@@ -24,8 +25,12 @@
     "ion-rangeslider": "^2.3.1",
     "jquery": "^3.6.0",
     "jquery-form-styler": "^2.0.2",
+    "owl-carousel": "^1.0.0",
+    "owl.carousel2": "^2.2.2",
+    "rateyo": "^2.3.2",
     "sass": "^1.49.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "swiper": "^9.1.0"
   },
   "dependencies": {
     "mixitup": "^3.3.1"

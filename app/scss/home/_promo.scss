@@ -1,0 +1,203 @@
+.promo {
+    text-align: center;
+    background-color: $silver-100;
+    // .promo__title
+
+    &__title {
+    }
+
+    // .promo__filter
+
+    &__filter {
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+
+    }
+
+    &__filters {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 51px;
+    }
+
+    // .promo__btn
+
+    &__btn {
+        text-transform: uppercase;
+        color: $dark-500;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.4;
+        padding: 0;
+        border-bottom: 3px solid transparent;
+    }
+
+    .mixitup-control-active {
+        border-bottom: 3px solid $green-200;
+    }
+
+    // .promo__content
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px 18px;
+    }
+
+    // .promo__item
+
+    &__item {
+    }
+
+    // .promo__card
+
+    &__card {
+        margin: 0 15px 30px;
+    }
+
+    // .promo__add
+
+    &__add {
+    }
+}
+
+
+.mixitup-control-active {
+    border-bottom: 3px solid $green-200;
+}
+
+.card-promo {
+
+    display: flex;
+    background-color: $white;
+    position: relative;
+    padding: 12px;
+    border: 1px solid rgba(17, 17, 17, 0.2);
+    border-radius: 6px;
+    min-height: 124px;
+    width: 300px;
+
+    &__link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__badge {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 1;
+        border-radius: 6px;
+        padding: 3px 6px;
+        letter-spacing: 3%;
+    }
+
+    &__news {
+        background-color: $accent;
+
+    }
+
+    &__hit {
+        background-color: $orange-900;
+
+    }
+
+    &__available {
+        color: $accent;
+    }
+
+    &__not-available {
+        color: $silver-600;
+    }
+
+    &__ends {
+        color: $red-900;
+    }
+
+    // .card-promo__img
+
+    &__img {
+    }
+
+    // .card-promo__items
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: left;
+        flex: 1 1 auto;
+    }
+
+    // .card-promo__description
+
+    &__description {
+        font-size: 14px;
+        line-height: 1.4;
+        flex-grow: 1;
+        color: $dark-900;
+        // padding: 0 18px;
+        // text-align: left;
+    }
+
+    // .card-promo__availability
+
+    &__availability {
+        text-transform: uppercase;
+        font-size: 10px;
+        line-height: 1;
+        margin-bottom: 5px;
+    }
+
+    // .card-promo__prices
+
+    &__prices {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .card-promo__new
+
+    &__new {
+        font-size: 20px;
+        color: $dark-500;
+        line-height: 1;
+    }
+
+    // .card-promo__old
+
+    &__old {
+        font-size: 12px;
+        font-weight: 400;
+        color: $silver-600;
+        text-decoration-line: line-through;
+    }
+
+    // .card-promo__rating
+
+    &__rating {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 1;
+        color: $dark-500;
+    }
+
+    // .card-promo__star
+
+    &__star {
+        width: 16px;
+        height: 16px;
+        fill: $yellow-900;
+        // justify-self: end;
+    }
+}

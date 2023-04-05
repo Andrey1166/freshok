@@ -12,6 +12,12 @@ body {
     @extend %OpenSans-600;
     display: flex;
     flex-direction: column;
+
+    // &.lock {
+    //     z-index: 10;
+    // }
+    // min-width: 0;
+    // overflow-x: hidden;
 }
 
 .lock {
@@ -25,20 +31,25 @@ body {
       top: 0;
       bottom: 0;
       background-color: rgba(0,0,0, 0.5);
+    //   transition: background-color 0.2s;
     }
+
 }
 
 .main {
     flex-grow: 1;
+    // min-width: 0;
 }
 
 .container {
-    max-width: 1420px;
+    max-width: 1320px;
     margin: 0 auto;
     padding: 0 15px;
+    // min-width: 0
 }
 
 .title {
+    text-transform: uppercase;
     @extend %Ruda-600;
     font-size: 32px;
     color: $dark-900;
@@ -69,7 +80,7 @@ body {
 .default__btn {
     padding: 12px 24px;
     background-color: $accent;
-    display: block;
+    display: inline-block;
     // margin-right: auto;
     color: $white;
     font-size: 18px;
@@ -167,3 +178,16 @@ body {
     $burgerColor: #c2c2c2; 
   }
 
+// .swiper-container .swiper-button-prev,
+// .swiper-container .swiper-button-next {
+//     color: $dark-500;
+//     padding: 30px;
+//     background-color: $white;
+//     opacity: 0.8;
+//     border-radius: 6px;
+// }
+
+// .swiper-container .swiper-button-prev::after,
+// .swiper-container .swiper-button-next::after {
+//     font-size: 32px;
+// }

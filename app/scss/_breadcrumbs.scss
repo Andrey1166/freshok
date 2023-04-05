@@ -1,14 +1,14 @@
 .breadcrumbs {
 
-    margin-top: 164px;
-    margin-bottom: 60px;
+    // margin-top: 164px;
+    // margin-bottom: 60px;
     
 
     &__inner {
         padding: 24px 0;
         max-width: 100vw;
         // background-color: rgba(255, 122, 80, 0.1);
-        background-color: $background;
+        background-color: $silver-100;
     }
     
     &__list {
@@ -33,13 +33,13 @@
         font-size: 14px;
         letter-spacing: 3%;
         line-height: 1.2;
-        color: #505050;
+        color: $dark-500;
         margin-right: 5px;
     }
 
     &__icon {
         width: 6px;
         height: 10px;
-        fill: #C1C1C1;
+        fill: $silver-600;
     }
 }

@@ -1,241 +1,122 @@
-<footer class="footer" id="footer">
+<footer class="footer">
     <div class="container">
         <div class="footer__top">
-            <div class="footer__content">
-                <a class="logo footer__logo" href="#">
-                    <img class="logo__img" src="images/logo.svg" alt="логотип" width="200" height="39">
-                </a>
-
-                <form class="footer__form" action="#">
-
-                    <label class="footer__label">
-                        <input class="footer__input" type="email" name="form" placeholder="Ваш email" required>
-                    </label>
-
-                    <button class="footer__btn default__btn" type="submit">
-                        <svg class="footer__btn--icon">
-                            <use xlink:href="images/sprite.svg#subscribe-icon"></use>
-                        </svg>
-                        Подписаться
-                    </button>
-
+            <a href="#" class="logo">
+                <img class="logo__img" src="images/logo.svg" alt="logo" width="200" height="60">
+            </a>
+        </div>
+        <div class="footer_inner">
+            <div class="footer__subscribe">
+                <h4 class="footer__subtitle">
+                    Следите за нашими акциями
+                </h4>
+                <form class="footer__form">
+                    <input class="footer__email" name="form" type="email" placeholder="email@email.com">
+                    <input class="footer__btn" type="button" value="Подписаться">
                 </form>
-
             </div>
-
-            <ul class="footer__list menu">
-
-                <li class="footer__item menu__item">
-                    <a class="footer__link menu__link" href="#">
-                        Как это работает
+            <nav class="footer__menu">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Публичная оферта
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Оплата и доставка
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Вакансии
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Акции
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            Новости
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <address class="footer__contacts">
+                <div class="footer__address">
+                    <a class="footer__phone" href="tel:+7907288365">
+                        Горячая линия +7 907 288 365
                     </a>
-                </li>
+                    <span class="footer__local">
+                        Санкт-Петербург, ул. Ленина, 1
+                    </span>
 
-                <li class="footer__item menu__item">
-                    <a class="footer__link menu__link" href="#">
-                        Продукты
-                    </a>
-                </li>
-
-                <li class="footer__item menu__item">
-                    <a class="footer__link menu__link" href="#popular">
-                        Блюда
-                    </a>
-                </li>
-
-                <li class="footer__item menu__item">
-                    <a class="footer__link menu__link" href="#">
-                        Меню
-                    </a>
-                </li>
-
-            </ul>
-
-            <ul class="footer__list menu">
-
-                <li class="footer__item menu__item">
-                    <a class="footer__link menu__link" href="#">
-                        О нас
-                    </a>
-                </li>
-
-                <li class="footer__item menu__item">
-                    <a class="footer__link menu__link" href="#">
-                        Новости
-                    </a>
-                </li>
-
-                <li class="footer__item menu__item">
-                    <a class="footer__link menu__link" href="#restaurant">
-                        Партнеры
-                    </a>
-                </li>
-
-                <li class="footer__item menu__item">
-                    <a class="footer__link menu__link" href="#">
-                        ЧаВо
-                    </a>
-                </li>
-
-            </ul>
-
-            <ul class="footer__list menu">
-
-                <li class="footer__item menu__item">
-                    <a class="footer__link menu__link" href="#app">
-                        Скачать приложение
-                    </a>
-                </li>
-
-                <li class="footer__item menu__item">
-                    <a class="footer__link menu__link" href="#">
-                        Блог
-                    </a>
-                </li>
-
-                <li class="footer__item menu__item">
-                    <a class="footer__link menu__link" href="#">
-                        Что нового?
-                    </a>
-                </li>
-
-                <li class="footer__item menu__item">
-                    <a class="footer__link menu__link" href="#">
-                        Карта сайта
-                    </a>
-                </li>
-
-            </ul>
-
-            <!-- <address class="footer__connection connection">
-
-                <span class="footer__info footer__info--location">
-                    ул. Смирнова 2/3
-                </span>
-
-                <a class="footer__info footer__info--phone menu__link" href="tel:+79068057043">
-                    79068057043
-                </a>
-
-                <a class="footer__info footer__info--email menu__link" href="mailto:support@sfood.com">
-                    support@sfood.com
-                </a>
-
+                </div>
                 <ul class="footer__social">
-
-                    <li class="footer__lists">
-                        <a class="footer__network" href="https://www.facebook.com"
-                            target="blank">
-
-                            <span class="sr-only">
-                                ссылка на страницу в фейсбуке
-                            </span>
-
+                    <li class="footer__network">
+                        <a class="footer__site" href="www.facebook.com" target="_blank">
                             <svg class="footer__icon">
-                                <use xlink:href="images/sprite.svg#facebook-icon"></use>
+                                <use xlink:href="images/sprite.svg#facebook_icon"></use>
                             </svg>
                         </a>
                     </li>
-
-                    <li class="footer__lists">
-                        <a class="footer__network" href="https://www.twitter.com"
-                            target="blank">
-
-                            <span class="sr-only">
-                                ссылка на страницу в твиттере
-                            </span>
-
+                    <li class="footer__network">
+                        <a class="footer__site" href="www.youtube.com" target="_blank">
                             <svg class="footer__icon">
-                                <use xlink:href="images/sprite.svg#twitter-icon"></use>
+                                <use xlink:href="images/sprite.svg#youtube_icon"></use>
                             </svg>
                         </a>
                     </li>
-
-                    <li class="footer__lists">
-                        <a class="footer__network" href="https://www.instagram.com"
-                            target="blank">
-
-                            <span class="sr-only">
-                                ссылка на страницу в инстаграме
-                            </span>
-
+                    <li class="footer__network">
+                        <a class="footer__site" href="www.telegram.com" target="_blank">
                             <svg class="footer__icon">
-                                <use xlink:href="images/sprite.svg#instagram-icon"></use>
+                                <use xlink:href="images/sprite.svg#telegram_icon"></use>
                             </svg>
                         </a>
                     </li>
-
+                    <li class="footer__network">
+                        <a class="footer__site" href="www.instagram.com" target="_blank">
+                            <svg class="footer__icon">
+                                <use xlink:href="images/sprite.svg#instagram_icon"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
-
-            </address> -->
-
-            <address class="footer__connection connection">
-
-                <span class="connection__info connection__info--location">
-                    ул. Смирнова 2/3
-                </span>
-
-                <a class="connection__info connection__info--phone menu__link" href="tel:+79068057043">
-                    79068057043
-                </a>
-
-                <a class="connection__info connection__info--email menu__link" href="mailto:support@sfood.com">
-                    support@sfood.com
-                </a>
-
-                <ul class="connection__social">
-
-                    <li class="connection__lists">
-                        <a class="connection__network" href="https://www.facebook.com"
-                            target="blank">
-
-                            <span class="sr-only">
-                                ссылка на страницу в фейсбуке
-                            </span>
-
-                            <svg class="connection__icon">
-                                <use xlink:href="images/sprite.svg#facebook-icon"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="connection__lists">
-                        <a class="connection__network" href="https://www.twitter.com"
-                            target="blank">
-
-                            <span class="sr-only">
-                                ссылка на страницу в твиттере
-                            </span>
-
-                            <svg class="connection__icon">
-                                <use xlink:href="images/sprite.svg#twitter-icon"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="connection__lists">
-                        <a class="connection__network" href="https://www.instagram.com"
-                            target="blank">
-
-                            <span class="sr-only">
-                                ссылка на страницу в инстаграме
-                            </span>
-
-                            <svg class="connection__icon">
-                                <use xlink:href="images/sprite.svg#instagram-icon"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                </ul>
-
             </address>
-
         </div>
     </div>
-
-    <div class="footer__copy">
-        © 2021 Simple Food
+    <div class="footer__copyright">
+        <div class="container">
+            <div class="footer__bottom">
+                <div class="footer__copy">
+                    © 2021 Фрешок
+                </div>
+                <div class="footer__credit">
+                    <svg class="footer__card">
+                        <use xlink:href="images/sprite.svg#visa"></use>
+                    </svg>
+                    <svg class="footer__card">
+                        <use xlink:href="images/sprite.svg#mastercard"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
     </div>
-
 </footer>

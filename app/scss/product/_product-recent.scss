@@ -1,0 +1,87 @@
+.recent {
+    position: relative;
+    // .recent__title
+
+    &__title {
+//         font-weight: 600;
+// font-size: 30px;
+// line-height: 120%;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    // .recent__slider
+
+    &__slider {
+        // position: relative;
+        overflow: hidden;
+
+        & .swiper-button-next,
+        .swiper-button-prev {
+            color: $dark-500;
+            // padding: 14px 20px;
+            border: 1px solid $silver-600;
+            border-radius: 6px;
+            width: 60px;
+            height: 60px;
+            z-index: 5;
+        }
+
+        & .swiper-button-prev {
+            top: 4%;
+            left: 88%;
+            font-size: 32px;
+        }
+
+        & .swiper-button-next {
+            top: 4%;
+            right: 0;
+        }
+
+        // & .swiper-button-next::after,
+        // .swiper-button-prev::after {
+        //     width: 19px;
+        //     height: 32px;
+        // }
+
+    }
+}
+.container {
+}
+.swiper {
+
+    // .swiper__container
+
+    &__container {
+    }
+
+    // .swiper__wrapper
+
+    &__wrapper {
+    }
+
+    // .swiper__slide
+
+    &__slide {
+    }
+
+    // .swiper__button
+
+    &__button {
+    }
+
+    // .swiper__button--prev
+
+    &__button--prev {
+    }
+
+    // .swiper__button--next
+
+    &__button--next {
+    }
+}
+
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
